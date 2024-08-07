@@ -14,3 +14,12 @@ body{
 
 ul li { list-style: none; }
 a { text-decoration: none; }
+
+
+.component-title{
+    color: var(--c-black);
+}
+
+button{
+    font-family: var(--f-regular);
+}

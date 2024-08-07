@@ -1,7 +1,16 @@
+
+/* default  */
 @import url('./fonts.css');
 @import url('./colors.css');
 @import url('./global.css');
 @import url('./typography.css');
 @import url('./utility-classes.css');
+@import url('./animation.css');
 
+/* components  */
 @import url('./components/accordion.css');
+@import url('./components/tabs.css');
+
+
+/* responsive  */
+@import url('./responsive.css');
