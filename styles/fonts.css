@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Poppind-Regular;
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppind-Medium;
+    src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppind-Semibold;
+    src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Poppind-Bold;
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+:root{
+    --f-regular : Poppind-Regular, 'sans-serif';
+    --f-medium : Poppind-Medium, 'sans-serif';
+    --f-semibold : Poppind-Semibold, 'sans-serif';
+    --f-bold : Poppind-Bold, 'sans-serif';
+}
