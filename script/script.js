@@ -2,8 +2,9 @@
 // accordion
 
 const titles = document.querySelectorAll('.accordion-title');
+const accordionContents = document.querySelectorAll('.accordion-content');
 
-titles.forEach((title) => {
+titles.forEach((title, index) => {
     title.addEventListener('click', function () {
         titles.forEach((accord) => {
             if (accord !== this && accord.parentElement.classList.contains('active')) {
@@ -12,6 +13,18 @@ titles.forEach((title) => {
         });
         
         title.parentElement.classList.toggle('active');
+
+
+        if (accordionContents[index].style.maxHeight) {
+            accordionContents[index].style.maxHeight = null;   
+            accordionContents[index].style.paddingBottom = null;
+        } else {
+            accordionContents[index].style.paddingBottom = '20px';
+            accordionContents[index].style.maxHeight = accordionContents[index].scrollHeight + 'px';
+        };
+
+        
+
     })
 })
 

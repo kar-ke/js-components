@@ -29,14 +29,15 @@
 }
 
 .accordion-content{
-    height: 0;
-    transition: .5s;
+    max-height: 0;
+    padding-bottom: 0;
+    transition: max-height .5s ease-out;
     overflow: hidden;
 }
 
-.accordion-list-item.active .accordion-content{
-    height: 100px;
-}
+/* .accordion-list-item.active .accordion-content{
+    max-height: 400px;
+} */
 .accordion-list-item.active .accord-status{
     transform: rotate(180deg);
 }
